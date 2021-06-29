@@ -124,8 +124,16 @@ ul {
   gap: 15px;
 }
 
+.content-item a img {
+  display: block;
+} 
+
 .footer-text{
   margin: 0;
+}
+
+.content-item:hover{
+  border: 1px solid var(--primary-color);
 }
 
 .content-footer{
@@ -135,8 +143,3 @@ ul {
   padding: 6px 20px;
   font-size: 14px;
 }
-
-.content-item a img {
-  display: block;
-} 
-
