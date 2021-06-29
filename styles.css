@@ -3,30 +3,24 @@
   --account-link-color: #333;
   --account-link-hover-color: var(--primary-color);
 }
-
 html,
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
-
 * {
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 .container {
   width: 1080px;
   margin: 0 auto;
 }
-
 .header-links {
   display: flex;
   justify-content: flex-end;
@@ -39,13 +33,11 @@ ul {
 .header-links a:hover {
   color: #666666;
 }
-
 .logo-search-account-container {
   display: grid;
   grid-template-columns: 140px 1fr 335px;
   margin-top: 10px;
 }
-
 .search {
   display: flex;
   align-items: center;
@@ -66,29 +58,24 @@ ul {
   background: none;
   border: none;
 }
-
 .account-list {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
   font-size: 12px;
 }
-
 .account-list li a {
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--account-link-color);
 }
-
 .account-list li a:hover {
   color: var(--primary-color);
 }
-
 .account-list li a:hover svg path {
   fill: var(--account-link-hover-color);
 }
-
 .user-menu {
   display: none;
   width: 170px;
@@ -111,6 +98,7 @@ ul {
   top: 20px;
   left: -60px;
 }
+/**main categories(kadın-erkek-cocuk)*/
 .categories {
   margin: 0 auto;
   display: flex;
@@ -125,14 +113,106 @@ ul {
   display: flex;
   width: 100%;
 }
-
-.categoriesListedItems a {
+.categories-listed-items {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   color: #333;
 }
-.categoriesListedItems a:hover {
+.categories-listed-items:hover {
   color: var(--primary-color);
   box-shadow: inset 0 -2px 0 0 var(--primary-color);
 }
+/**End of main categories(kadın-erkek-cocuk) */
+
+/**Popular Brands Area After Header Section */
+.popular-brands-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.popular-brands-list li a {
+  display: flex; /*for the image and span(text which belongs the presented image)*/
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.popular-brands-list li a:hover > .popular-brands-image {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+.popular-brands-list li:hover > a .popular-brands-text {
+  color: var(--primary-color);
+}
+.popular-brands-text {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+  line-height: 15px;
+  margin-top: 10px;
+}
+.popular-brands-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  top: 10px;
+  left: 0;
+}
+/** End of Popular Brands Area After Header Section */
+
+/*?mega menu Dropdown */
+.wrapper-mega-menu {
+  display: grid;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  width: 1080px;
+  height: 325px;
+  display: none;
+}
+.sub-menu {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.sub-category-header {
+  color: #333;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 150px;
+}
+.sub-item-list li a {
+  color: #666;
+  font-size: 13px;
+  line-height: 16px;
+}
+.sub-category-header:hover,
+.sub-item-list li a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+.sub-item-list {
+  padding-left: 0;
+}
+.compaign-image {
+  width: 300px;
+  height: 120px;
+  margin-top: 15px;
+}
+.ev-yasam-list:hover > .ev-yasam-list-wrapper {
+  display: grid;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.kadin-list:hover > .kadin-list-wrapper {
+  display: grid;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+/*? End of mega menu Dropdown */
