@@ -117,3 +117,26 @@ ul {
   flex-direction: row;
   gap: 20px;
 }
+
+.content-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-text{
+  margin: 0;
+}
+
+.content-footer{
+  background-color: #1B1B1B;
+  color: #FFFFFF;
+  height: 30px;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+
+.content-item a img {
+  display: block;
+} 
+
