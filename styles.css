@@ -132,12 +132,19 @@ ul {
   margin: 0;
 }
 
-/* .content-item:hover {
+ .content-item:hover {
   border: 1px solid var(--primary-color);
-} */
+} 
+.content-item {
+  border: 1px solid transparent;
+} 
 
 .content-item:hover .content-footer {
   background-color: var(--primary-color);
+}
+
+.content-item:hover .footer-text-hover {
+  visibility: visible;
 }
 
 .content-footer {
@@ -152,7 +159,9 @@ ul {
 }
 
 .footer-text-hover {
-  
+  visibility: hidden;
+  display: flex;
+  gap: 7px;
 }
 
 .content-sidebar {
