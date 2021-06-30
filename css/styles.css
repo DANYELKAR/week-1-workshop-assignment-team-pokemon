@@ -110,6 +110,8 @@ ul {
 .search-input:focus + .search-options {
     display: block;
     position: absolute;
+    z-index: 1;
+    background: #fff;
 }
 .search input {
     flex: 1;
@@ -199,4 +201,5 @@ ul {
     position: absolute;
     top: 25px;
     left: -60px;
+    z-index: 1;
 }
