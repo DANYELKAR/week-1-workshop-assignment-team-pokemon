@@ -487,6 +487,7 @@ ul {
 .product-content-items {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 
 .product-item-image{
@@ -497,5 +498,21 @@ ul {
   position: absolute;
   right: 11px;
   top: 10px;
+}
+
+.product-item{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+.product-item-detail-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.product-item-detail-rating p, 
+.product-item-detail-rating + p  {
+  color: #999;
 }
 
