@@ -413,7 +413,7 @@ ul {
   margin: 0;
 }
 
- .content-item:hover {
+.content-item:hover {
   border: 1px solid var(--primary-color);
 } 
 .content-item {
@@ -449,6 +449,10 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.content-sidebar-item {
+  border: 1px solid transparent;
 }
 
 .right-image-content {
