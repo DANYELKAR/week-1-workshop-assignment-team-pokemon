@@ -475,9 +475,20 @@ ul {
 .product-options {
   width: 180px;
   height: 30px;
+  color: #666;
+  border: solid 1px #e2e2e2;
 }
 
 .product-result {
   font-size: 14px;
   font-weight: 600;
 }
+
+.product-item img{
+  position: absolute;
+}
+
+.product-item {
+  position: relative;
+}
+
