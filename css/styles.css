@@ -458,3 +458,26 @@ ul {
 .right-image-content {
   width: 310px;
 }
+
+/* Product List Content */
+.product-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-options {
+  width: 180px;
+  height: 30px;
+}
+
+.product-result {
+  font-size: 14px;
+  font-weight: 600;
+}
