@@ -484,11 +484,18 @@ ul {
   font-weight: 600;
 }
 
-.product-item img{
-  position: absolute;
+.product-content-items {
+  display: flex;
+  flex-direction: row;
 }
 
-.product-item {
+.product-item-image{
   position: relative;
+}
+
+.product-icon-ellipse {
+  position: absolute;
+  right: 11px;
+  top: 10px;
 }
 
