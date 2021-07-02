@@ -8,7 +8,7 @@
 html,
 body {
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -131,7 +131,7 @@ ul {
   align-items: center;
   gap: 30px;
   font-size: 12px;
-  margin:0
+  margin: 0;
 }
 .account-list > li {
   height: 42px;
@@ -172,7 +172,7 @@ ul {
   border-radius: 4px;
 }
 .user-menu::before {
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
   border-top: 1px solid #e6e6e6;
@@ -398,7 +398,7 @@ ul {
 /*? End of mega menu Dropdown */
 
 /* Product List Content */
-.product-content{
+.product-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -429,7 +429,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.product-content-item-image{
+.product-content-item-image {
   position: relative;
 }
 
@@ -437,7 +437,7 @@ ul {
   position: absolute;
   right: 11px;
   top: 10px;
-  background-image: url("../assets/icons/icon-favorite-ellipse.svg");
+  background-image: url('../assets/icons/icon-favorite-ellipse.svg');
   height: 50px;
   width: 50px;
   text-align: center;
@@ -447,34 +447,37 @@ ul {
   margin-top: 15px;
 }
 
-.product-content-item{
+.product-content-item {
   display: flex;
   flex-direction: column;
-  width: 230px;  
+  gap: 10px;
+  width: 230px;
 }
 
-.product-content-item-detail p, img {
-  margin:0;
+.product-content-item-detail p,
+img {
+  margin: 0;
 }
 
 .product-content-item-detail-rating {
-  display: flex; 
+  display: flex;
   gap: 6px;
 }
 
-.product-content-item-detail-rating p, 
+.product-content-item-detail-rating p,
 .product-content-item-detail-rating + p,
 .product-content-item-sale p {
   color: #999;
 }
 
-.product-content-item-sale p  {
+.product-content-item-sale p {
   font-size: 12px;
   border: solid 1px var(--primary-color);
   width: 172px;
   height: 26px;
   border-radius: 3px;
   text-align: center;
+  margin:0;
 }
 
 .product-content-item-sale p span {
@@ -483,3 +486,9 @@ ul {
   font-weight: bold;
 }
 
+.product-content-item-icon-ellipse:hover
+  .product-content-item-icon-favorite
+  svg
+  path {
+  fill: var(--primary-color);
+}
