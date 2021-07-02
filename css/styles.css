@@ -8,7 +8,7 @@
 html,
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
@@ -172,7 +172,7 @@ ul {
   border-radius: 4px;
 }
 .user-menu::before {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   border-top: 1px solid #e6e6e6;
@@ -232,7 +232,6 @@ ul {
   box-shadow: inset 0 -2px 0 0 var(--primary-color);
 }
 /**End of main categories(kadın-erkek-cocuk) */
-
 
 /*?mega menu Dropdown */
 .wrapper-mega-menu {
@@ -400,7 +399,7 @@ ul {
   position: absolute;
   right: 11px;
   top: 10px;
-  background-image: url('../assets/icons/icon-favorite-ellipse.svg');
+  background-image: url("../assets/icons/icon-favorite-ellipse.svg");
   height: 50px;
   width: 50px;
   text-align: center;
@@ -440,7 +439,7 @@ img {
   height: 26px;
   border-radius: 3px;
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
 .product-content-item-sale p span {
@@ -459,6 +458,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 .breadcrumb-item {
   font-size: 14px;
@@ -479,7 +479,6 @@ img {
   flex-direction: column;
   width: fit-content;
   gap: 5px;
-  margin: 10px 0;
 }
 .filter-related-categories .show-more {
   background-color: transparent;
@@ -530,4 +529,13 @@ img {
   background: #fff;
   border: 1.5px solid #d6d6d6;
   border-radius: 2px;
+}
+.filter-page-main-area {
+  display: grid;
+  grid-template-columns: 185px 980px;
+  gap: 20px;
+}
+.main-area-container {
+  width: 1185px;
+  margin: auto;
 }
