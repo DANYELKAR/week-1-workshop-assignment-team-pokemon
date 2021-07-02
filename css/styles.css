@@ -309,6 +309,10 @@ ul {
   margin-top: 15px;
 }
 
+.main-categories li:hover > div{
+  z-index: 1;
+}
+
 .kadin-list:hover > .kadin-list-wrapper {
   display: grid;
   position: absolute;
@@ -457,4 +461,73 @@ ul {
 
 .right-image-content {
   width: 310px;
+}
+
+
+/* ---FILTER SIDEBAR--- */
+
+.filter-sidebar{
+  position: sticky;
+  width: 185px;
+  height: 930px;
+  left: 50px;
+  z-index: 0;
+}
+
+.filter-sidebar > p{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.filter-sidebar ul{
+  padding: 0;  
+}
+
+/* --BRANDS-- */
+.brands input[type="checkbox"], .brands label{
+  cursor: pointer;
+}
+.brands li .brands-search{
+  background: #FAFAFA;
+  border: 1px solid #E2E2E2;
+  border-radius: 3px;
+}
+.brands li input[type="checkbox"]{
+  background: #FFFFFF;;
+  border: 1.5px solid #D6D6D6;
+  border-radius: 2px;
+}
+.brands li label{
+  font-size: 13px;
+}
+/* --PRICE SEARCH-- */
+.price-search li label{
+  font-size: 13px;
+}
+.price-search input[type="radio"], .price-search label, .price-search button{
+  cursor: pointer;
+}
+.price-search li:first-child input{
+    background: #FAFAFA;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    width: 58px;
+}
+
+.price-search li:first-child button{
+  border: unset;
+  border-radius: 3px;
+}
+
+/* --CARGO OPTIONS-- */
+.cargo-options li label{
+  font-size: 14px;
+  font-weight: 600;
+}
+.cargo-options input[type="checkbox"], .cargo-options label{
+  cursor: pointer;
 }
