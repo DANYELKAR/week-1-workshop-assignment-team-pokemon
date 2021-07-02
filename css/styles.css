@@ -495,7 +495,11 @@ ul {
   background: #FAFAFA;
   border: 1px solid #E2E2E2;
   border-radius: 3px;
+  width: 175px;
+  height: 27px;
+  padding: 6px 10px 6px 10px;
 }
+
 .brands li input[type="checkbox"]{
   background: #FFFFFF;;
   border: 1.5px solid #D6D6D6;
@@ -530,4 +534,8 @@ ul {
 }
 .cargo-options input[type="checkbox"], .cargo-options label{
   cursor: pointer;
+}
+
+.brands li:first-child input {
+  margin-bottom: 10px;
 }
