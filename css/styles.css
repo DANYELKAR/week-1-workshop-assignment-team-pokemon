@@ -233,43 +233,6 @@ ul {
 }
 /**End of main categories(kadın-erkek-cocuk) */
 
-/**Popular Brands Area After Header Section */
-.popular-brands-list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-bottom: 27px;
-}
-.popular-brands-list li a {
-  display: flex; /*for the image and span(text which belongs the presented image)*/
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.popular-brands-list li a:hover > .popular-brands-image {
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
-}
-.popular-brands-list li:hover > a .popular-brands-text {
-  color: var(--primary-color);
-}
-.popular-brands-text {
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #333;
-  line-height: 15px;
-  margin-top: 10px;
-}
-.popular-brands-image {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  top: 10px;
-  left: 0;
-}
-/** End of Popular Brands Area After Header Section */
 
 /*?mega menu Dropdown */
 .wrapper-mega-menu {
@@ -491,4 +454,80 @@ img {
   svg
   path {
   fill: var(--primary-color);
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+}
+.breadcrumb a:last-child {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: text;
+}
+.breadcrumb .breadcrumb-item:hover {
+  text-decoration: underline;
+}
+.filter-related-categories {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 5px;
+  margin: 10px 0;
+}
+.filter-related-categories .show-more {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 0;
+  padding: 10px 0;
+}
+.filter-related-categories a {
+  font-size: 13px;
+  color: #000;
+  font-weight: 400;
+}
+.filter-related-categories a:hover {
+  opacity: 0.5;
+}
+.side-bar-headings {
+  font-weight: 600;
+  font-size: 14px;
+}
+.sale-products {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0;
+}
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  color: #000;
+  line-height: 16px;
+  gap: 5px;
+}
+.filter-wrapper label:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.filter-wrapper input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 1.5px solid #d6d6d6;
+  border-radius: 2px;
 }
