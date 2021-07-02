@@ -7,7 +7,7 @@
 html,
 body {
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -130,7 +130,7 @@ ul {
   align-items: center;
   gap: 30px;
   font-size: 12px;
-  margin:0
+  margin: 0;
 }
 .account-list > li {
   height: 42px;
@@ -171,7 +171,7 @@ ul {
   border-radius: 4px;
 }
 .user-menu::before {
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
   border-top: 1px solid #e6e6e6;
@@ -393,13 +393,15 @@ ul {
   padding: 4px;
 }
 /*? End of mega menu Dropdown */
+
+/* Content */
 .content {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.content-images {
+.content-items {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -415,10 +417,10 @@ ul {
 
 .content-item:hover {
   border: 1px solid var(--primary-color);
-} 
+}
 .content-item {
   border: 1px solid transparent;
-} 
+}
 
 .content-item:hover .content-footer {
   background-color: var(--primary-color);
@@ -445,6 +447,10 @@ ul {
   gap: 7px;
 }
 
+.footer-text-hover::before {
+  content: 'Alışverişe Başla';
+}
+
 .content-sidebar {
   display: flex;
   flex-direction: column;
@@ -458,3 +464,4 @@ ul {
 .right-image-content {
   width: 310px;
 }
+/*? End of Content */
