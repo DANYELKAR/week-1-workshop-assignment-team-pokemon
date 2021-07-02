@@ -286,3 +286,80 @@ ul {
   padding: 4px;
 }
 /*? End of mega menu Dropdown */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+}
+.breadcrumb a:last-child {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: text;
+}
+.breadcrumb .breadcrumb-item:hover {
+  text-decoration: underline;
+}
+.filter-related-categories {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 5px;
+  margin: 10px 0;
+}
+.filter-related-categories .show-more {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 0;
+  padding: 10px 0;
+}
+.filter-related-categories a {
+  font-size: 13px;
+  color: #000;
+  font-weight: 400;
+}
+.filter-related-categories a:hover {
+  opacity: 0.5;
+}
+.side-bar-headings {
+  font-weight: 600;
+  font-size: 14px;
+}
+.sale-products {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0;
+}
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  color: #000;
+  line-height: 16px;
+  gap: 5px;
+}
+.filter-wrapper label:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.filter-wrapper input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 1.5px solid #d6d6d6;
+  border-radius: 2px;
+}
