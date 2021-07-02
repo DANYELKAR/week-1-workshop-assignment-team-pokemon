@@ -395,42 +395,39 @@ ul {
 /*? End of mega menu Dropdown */
 
 /* Content */
-.content {
+.main-content {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.content-items {
+.main-content-items {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.content-item a img {
-  display: block;
-}
-
-.content-footer p {
-  margin: 0;
-}
-
-.content-item:hover {
-  border: 1px solid var(--primary-color);
-}
-.content-item {
+.main-content-item {
   border: 1px solid transparent;
 }
 
-.content-item:hover .content-footer {
+.main-content-item:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.main-content-item a img {
+  display: block;
+}
+
+.main-content-item:hover .main-content-footer {
   background-color: var(--primary-color);
 }
 
-.content-item:hover .footer-text-hover {
+.main-content-item:hover .main-content-footer-text-hover {
   visibility: visible;
 }
 
-.content-footer {
+.main-content-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,27 +438,31 @@ ul {
   font-size: 14px;
 }
 
-.footer-text-hover {
+.main-content-footer p {
+  margin: 0;
+}
+
+.main-content-footer-text-hover {
   visibility: hidden;
   display: flex;
   gap: 7px;
 }
 
-.footer-text-hover::before {
+.main-content-footer-text-hover::before {
   content: 'Alışverişe Başla';
 }
 
-.content-sidebar {
+.main-content-sidebar {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.content-sidebar-item {
+.main-content-sidebar-item {
   border: 1px solid transparent;
 }
 
-.right-image-content {
+.main-content-sidebar-image {
   width: 310px;
 }
-/*? End of Content */
+/* End of Content */
