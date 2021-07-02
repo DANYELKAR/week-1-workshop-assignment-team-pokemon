@@ -130,7 +130,7 @@ ul {
   align-items: center;
   gap: 30px;
   font-size: 12px;
-  margin:0
+  margin: 0;
 }
 .account-list > li {
   height: 42px;
@@ -309,7 +309,7 @@ ul {
   margin-top: 15px;
 }
 
-.main-categories li:hover > div{
+.main-categories li:hover > div {
   z-index: 1;
 }
 
@@ -419,10 +419,10 @@ ul {
 
 .content-item:hover {
   border: 1px solid var(--primary-color);
-} 
+}
 .content-item {
   border: 1px solid transparent;
-} 
+}
 
 .content-item:hover .content-footer {
   background-color: var(--primary-color);
@@ -463,10 +463,9 @@ ul {
   width: 310px;
 }
 
-
 /* ---FILTER SIDEBAR--- */
 
-.filter-sidebar{
+.filter-sidebar {
   position: sticky;
   width: 185px;
   height: 930px;
@@ -474,7 +473,7 @@ ul {
   z-index: 0;
 }
 
-.filter-sidebar > p{
+.filter-sidebar > p {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -483,59 +482,232 @@ ul {
   text-align: center;
 }
 
-.filter-sidebar ul{
-  padding: 0;  
+.filter-sidebar ul {
+  padding: 0;
 }
 
 /* --BRANDS-- */
-.brands input[type="checkbox"], .brands label{
+.brands{
+  margin-bottom: 37px;
+}
+.brands input[type="checkbox"],
+.brands label {
   cursor: pointer;
 }
-.brands li .brands-search{
-  background: #FAFAFA;
-  border: 1px solid #E2E2E2;
+.brands-search:focus {
+  outline-color: var(--primary-color);
+}
+.brands-search {
+  background: #fafafa;
+  border: 1px solid #e2e2e2;
   border-radius: 3px;
   width: 175px;
   height: 27px;
   padding: 6px 10px 6px 10px;
+  margin-bottom: 8px;
 }
 
-.brands li input[type="checkbox"]{
-  background: #FFFFFF;;
-  border: 1.5px solid #D6D6D6;
+.brands li input[type="checkbox"] {
+  background: #ffffff;
+  border: 1.5px solid #d6d6d6;
   border-radius: 2px;
 }
-.brands li label{
+.brands li label {
   font-size: 13px;
 }
 /* --PRICE SEARCH-- */
-.price-search li label{
+.price-search{
+  margin-top: 31px;
+  margin-bottom: 20px;
+}
+.price-search li input[type="radio"]{
+  position:relative;
+  width:20px;
+  height:20px;
+}
+.price-search li input[type="radio"]:checked::before{
+  content:"";
+  width:18px;
+  height:18px;
+  border:2px solid var(--primary-color);
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+}
+.price-search li input[type="radio"]:checked::after{
+  content:"";
+  width:13px;
+  height:13px;
+  background:var(--primary-color);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+  position:absolute;
+  border-radius:50%
+}
+.price-search li label {
   font-size: 13px;
 }
-.price-search input[type="radio"], .price-search label, .price-search button{
+.price-search input[type="radio"],
+.price-search label,
+.price-search button {
   cursor: pointer;
 }
-.price-search li:first-child input{
-    background: #FAFAFA;
-    border: 1px solid #E2E2E2;
-    border-radius: 3px;
-    width: 58px;
+.price-search li:not(:first-child){
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
-
-.price-search li:first-child button{
+.price-search li label {
+  font-size: 12px;
+}
+.price-search li input[type="radio"]{
+  margin: 0 15px 0 0;
+}
+.price-search li:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.price-search li:first-child input {
+  background: #fafafa;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  width: 58px;
+  height: 27px;
+  padding: 0 8px;
+  font-size: 12px;
+  
+}
+.price-search li:first-child input:focus{
+  outline-color: var(--primary-color);
+}
+.price-search li:first-child button {
   border: unset;
   border-radius: 3px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 /* --CARGO OPTIONS-- */
-.cargo-options li label{
+.cargo-options{
+  margin-top: 20px;
+}
+.cargo-options li label {
   font-size: 14px;
   font-weight: 600;
 }
-.cargo-options input[type="checkbox"], .cargo-options label{
+.cargo-options input[type="checkbox"],
+.cargo-options label {
   cursor: pointer;
 }
 
 .brands li:first-child input {
   margin-bottom: 10px;
+}
+
+.brands-scroll-container{
+  height: 200px;
+  overflow-y: scroll;
+}
+.orange-checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Hide the browser's default checkbox */
+.orange-checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  border: 1px solid #d6d6d6;
+}
+
+/* On mouse-over, add a grey background color */
+.orange-checkbox-label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.orange-checkbox-label input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.orange-checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.orange-checkbox-label .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.brands-scroll-container::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 100px;
+}
+
+.brands-scroll-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+.brands-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 100px;
+
+}
+input[type="radio"]{
+  width: 20px;
+  height: 20px;
+}
+hr{
+  border: 1px solid #ececec;
+}
+.cargo{
+  margin-top: 20px;
 }
