@@ -243,6 +243,7 @@ ul {
   width: 1080px;
   height: 325px;
   display: none;
+  z-index: 10;
 }
 .sub-menu {
   margin-top: 15px;
@@ -355,7 +356,7 @@ ul {
   width: 100%;
 }
 .parfume {
-  padding: 4px;
+  padding-right: 10px;
 }
 /*? End of mega menu Dropdown */
 
@@ -539,11 +540,12 @@ img {
   display: grid;
   grid-template-columns: 185px 980px;
   gap: 20px;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 .main-area-container {
   width: 1185px;
   margin: auto;
+  position: relative;
 }
 /*!!!!!!*^/
 
@@ -581,6 +583,9 @@ img {
   margin-top: 31px;
   margin-bottom: 20px;
   padding-left: 0;
+}
+.price-search li:hover {
+  opacity: 0.5;
 }
 .price-search li input[type="radio"] {
   position: relative;
@@ -690,7 +695,9 @@ img {
   font-size: 13px;
   font-weight: 400;
 }
-
+.orange-checkbox-label:hover {
+  opacity: 0.5;
+}
 /* Hide the browser's default checkbox */
 .orange-checkbox-label input {
   position: absolute;
