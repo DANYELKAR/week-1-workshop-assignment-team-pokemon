@@ -2,7 +2,8 @@
   --primary-color: #f27a1a;
   --account-link-color: #333;
   --account-link-hover-color: var(--primary-color);
-  --first-z-index: 2;
+  --mega-menu-z-index: 2;
+  --header-z-index: 3;
 }
 
 html,
@@ -110,7 +111,7 @@ ul {
 .search-input:focus + .search-options {
   display: block;
   position: absolute;
-  z-index: 1;
+  z-index: var(--header-z-index);
   background: #fff;
 }
 .search input {
@@ -198,7 +199,7 @@ ul {
   position: absolute;
   top: 25px;
   left: -60px;
-  z-index: 1;
+  z-index: var(--header-z-index);
 }
 
 /* Mega Menu */
@@ -210,7 +211,7 @@ ul {
   width: 1080px;
   position: relative;
   margin-top: 34px;
-  z-index: var(--first-z-index);
+  z-index: var(--mega-menu-z-index);
 }
 .main-categories {
   list-style: none;
