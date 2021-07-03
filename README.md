@@ -40,7 +40,7 @@ Contributions are what make the open source community such an amazing place to b
 - [@gokcecicek](https://github.com/gokcecicek)
 - [@erenozger](https://github.com/erenozger)
 - [@gizayeroglu](https://github.com/gizayeroglu)
-- [@yildirimsamet](https://github.com/korayizlimek)
+- [@yildirimsamet](https://github.com/yildirimsamet)
 
 ## Figma
 
