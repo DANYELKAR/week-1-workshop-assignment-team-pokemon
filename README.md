@@ -46,6 +46,14 @@ Contributions are what make the open source community such an amazing place to b
 
 [Figma Design](https://www.figma.com/file/IwnhPC5WBglAFGc0MJ6wXj/Trendyol-Front-End-Bootcamp?node-id=0%3A1)
 
+## Preview
+
+![Preview1](./assets/gif/readme1.gif)
+
+##
+
+![Preview1](./assets/gif/readme2.gif)
+
 ## License
 
 [MIT](LICENSE)
